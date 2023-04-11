@@ -65,8 +65,12 @@ void Error_Handler(void);
 #define LED4_WHITE_GPIO_Port GPIOA
 #define LED2_YELLOW_Pin GPIO_PIN_4
 #define LED2_YELLOW_GPIO_Port GPIOA
-/* USER CODE BEGIN Private defines */
 
+/* USER CODE BEGIN Private defines */
+typedef struct{
+  uint32_t seq_no;
+  uint32_t temp_oCx100;
+} TEMPERATURE_OBJ_t;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
