@@ -77,10 +77,10 @@ void Error_Handler(void);
 #define BRIDGE_3A_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-typedef struct{
-  uint32_t seq_no;
-  uint32_t temp_oCx100;
-} TEMPERATURE_OBJ_t;
+typedef struct {
+uint32_t seq_no;
+int32_t temp_oCx100;
+} __attribute__((packed)) TEMPERATURE_OBJ_t;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
